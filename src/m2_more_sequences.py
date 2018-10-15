@@ -184,14 +184,14 @@ def index_of_largest_number(numbers, n):
 
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
     index_of_max = 0
     for k in range(n):
         if(numbers[k]>numbers[index_of_max]):
             index_of_max = k
-
+    return index_of_max
 
 # ----------------------------------------------------------------------
 # Some problems iterate (loop) through the sequence accessing TWO
