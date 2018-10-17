@@ -320,7 +320,7 @@ def is_palindrome(s):
       :type s: str
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     ####################################################################
@@ -329,12 +329,10 @@ def is_palindrome(s):
     #   above are particularly good examples to work by hand.
     ####################################################################
     # ------------------------------------------------------------------
-    last = len(s)-1
-    for k in range(len(s)):
-        last = last - k
-        if(s[k]==s[last]):
-            return True
-    return False
+    for k in range(len(s)//2):
+        if(s[k]!=s[len(s)-k-1]):
+            return False
+    return True
 # ----------------------------------------------------------------------
 # Some problems loop (iterate) through two or more sequences
 #    IN PARALLEL, as in the   count_same   problem below.
