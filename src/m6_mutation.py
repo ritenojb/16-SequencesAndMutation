@@ -133,7 +133,11 @@ def RETURN_replace_negatives_by_zeros(numbers):
     #          Make sure that you understand it.
     #          Then, IMPLEMENT and test THIS FUNCTION
     #          (using the above code for testing).
-
+    numbers2 = numbers
+    for k in range(len(numbers2)):
+        if(numbers2[k]<0):
+            numbers2[k]=0
+    return numbers2
 
 def run_test_MUTATE_replace_negatives_by_zeros():
     """ Tests the   MUTATE_replace_negatives_by_zeros   function. """
